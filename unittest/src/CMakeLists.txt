@@ -3,14 +3,18 @@ add_executable(my_test
 )
 
 target_include_directories(my_test PUBLIC
+    ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/unittest/include
 )
 
 target_link_libraries(my_test
-    # TODO
+    gtest_main
+    gmock
+    gtest
 )
 
-target_compile_definitions(my_test
-    # TODO
-)
+# TODO
+# target_compile_definitions(my_test
+# )
 
+gtest_discover_tests(my_test)

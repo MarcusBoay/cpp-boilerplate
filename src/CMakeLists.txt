@@ -11,12 +11,12 @@ target_include_directories(my_project PUBLIC
     ${PROJECT_SOURCE_DIR}/include
 )
 
-target_link_libraries(my_project
-    # TODO
-)
+# TODO
+# target_link_libraries(my_project
+# )
 
-target_compile_definitions(my_project
-    # TODO
-)
+# TODO
+# target_compile_definitions(my_project
+# )
 
 install(TARGETS my_project COMPONENT main)

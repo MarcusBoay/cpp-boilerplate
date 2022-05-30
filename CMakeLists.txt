@@ -24,3 +24,10 @@ find_package(Threads REQUIRED)
 add_subdirectory(
     ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
+
+# CTest support.
+enable_testing()
+# Build unit tests.
+add_subdirectory(
+    ${CMAKE_CURRENT_SOURCE_DIR}/unittest
+)
